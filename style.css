@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  color:#fff;
+  font-family:'Nunito';
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #181818;
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+}
+.sandwich{
+  margin:0 auto;
+  width:1000px;
+}
+.oui{
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+header li {
+  display: inline-block;
+  vertical-align: top;
+  position:relative;
+  z-index:10;
+}
+.sous-menu {
+  display:none;
+  position:absolute;
+  background-color: #7C0000;
+  width: 200px;
+}
+.sous-menu li {
+  display:block;
+}
+.submenu li a {
+  color:#fff;
+}
+.sous-menu li:hover a {
+  background-color: #fff;
+  color : #7C0000;
+}
+header li a {
+  display:block;
+  padding:20px;
+  text-align: center;
+  font-family: "Nunito";
+}
+header li:hover a{
+  background-color: #7C0000;
+  color:#fff;
+}
+header li a:hover{
+  background-color: #7C0000;
+  color:#fff;
+}
+header li:hover .sous-menu {
+  display: block;
+}
+text.sandwich{
+  margin-top: 35px;
+}
+.test {
+    margin:0 auto;
+}
+.contenu{
+  width:100%;
+  height:auto;
+  margin:auto;
+  max-width: 1200px;
+  padding: 40px 0 40px 0;
+
+}
+.fond{
+  width:100%;
+  height: 100vh;
+  background:url("background_test.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position:relative;
+}
+.contenu h1{
+  font-family: "Ubuntu";
+  font-size: 50px;
+  font-weight: bold;
+}
+.contenu p{
+  font-family: "Ubuntu";
+  font-size: 30px;
+}
+.fond .guts{
+  width: 33%;
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  right:0;
+  left:5%;
+  margin:auto;
+}
+.contenu .chapitre{
+  margin-top:20px;
+  border:3px solid white;
+}
+.contenu p nom{
+  font-weight: bold;
+}
+.contenu h2{
+  font-family: "Ubuntu";
+  font-size: 80px;
+  font-weight: bold;
+}
+.contenu h3 {
+  font-family: "Ubuntu";
+  font-size: 60px;
+  font-weight: bold;
+  padding-top:100px;
+  color:#BB1414;
+}
+.contenu .naissance{
+  font-family: "Ubuntu";
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
+.contenu figcaption {
+  font-family: 'Ubuntu';
+  color:#979797;
+}
+.contenu iframe{
+  margin-top: 20px;
+  border:3px solid white;
+}
+.tableau
+{
+  margin-top: 10px;
+  border-collapse : separate;
+  border-spacing : 10px;
+  border: 1px solid white;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #BB1414;
+}
