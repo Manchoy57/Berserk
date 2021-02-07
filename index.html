@@ -1,0 +1,66 @@
+<html lang='fr'>
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css"/>
+	<title>Présentation Berserk</title>
+	<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href= "Images\Berserk_logo.png" />
+</head>
+<body>
+  	<link rel="stylesheet" href="style.css" />
+  	<link rel="stylesheet" href="reset.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<center> <img src = "Images\Berserk_anime_logo.png" alt = "Logo berserk" height="100px" width = "200px" align="center"/> </center>
+	<header class = 'oui'>
+		<nav class="sandwich">
+   		<ul>
+       		<li>
+         		<a href = "index.html"> ACCUEIL </a>
+       		</li>
+       		<li>
+         		<a href = "informations.html"> INFO </a>
+         		<ul class="sous-menu">
+          		<li><a href ="informations.html#Pourquoi-ce-style" title = "Pourquoi ce site"> Pourquoi ce site</a></li>
+          		<li><a href ="informations.html#Qui" title = "Qui ?"> Qui ?</a></li>
+          		<li><a href ="informations.html#Pourquoi-ce-thème" title = "Pourquoi ce thème"> Pourquoi ce thème</a></li>
+							<li><a href ="informations.html#Source" title = "source d'aide"> Source </a></li>
+       			</ul>
+       		</li>
+       		<li>
+         		<a href = "thème.html"> THEME </a>
+				 		<ul class = "sous-menu">
+							<li> <a href ="thème.html#c'est-quoi" title = "C'est quoi ?"> C'est quoi ? </a></li>
+							<li> <a href ="thème.html#Créateur" title = "Le créateur"> Le créateur </a></li>
+							<li> <a href ="thème.html#Evolution" title = "L'évolution">L'évolution </a></li>
+							<li> <a href = "thème.html#Autre" title = "autre"> Autre </a> </li>
+       		</li>
+  		</ul>
+		</nav>
+	</header>
+	<div class = 'fond'>
+		<img src = "Images\gutss.png" alt ='guts' class ='guts'/>
+	</div>
+	<div class ='contenu'>
+		<center> <h1> Présentation de Berserk  </h1>
+		<p> Bonjour, sur ce site je vais vous présenter le manga Berserk de <nom>KENTARO Miura</nom>. </p> </center>
+		<center> <img src = "Images\berserk_chap1.jpg" alt ='chap1' width="500px" height="700px" class = 'chapitre'/> </center>
+</body>
+<script>
+	$(window).scroll(function(){
+	var scrollPos = $(this).scrollTop()/20;
+	console.log(scrollPos);
+	$('.fond').css({
+		'background-size' : 100+scrollPos + "%"
+	})
+	$('.guts').css({
+		'top' : 70 - scrollPos + '%'
+	})
+})</script>
+</html>
